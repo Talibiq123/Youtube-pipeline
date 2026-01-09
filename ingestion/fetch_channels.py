@@ -12,7 +12,7 @@ BASE_URL = "https://www.googleapis.com/youtube/v3/channels"
 
 def fetch_channel_data(channel_id):
     params = {
-        "part": "snippet,statistics",
+        "part": "snippet,statistics,contentDetails",
         "id": channel_id,
         "key": API_KEY
     }
